@@ -21,9 +21,9 @@
 	// For cache problems
 	var already = false;
 	if(already == false) {
-		if(window.location.search.startsWith("?cache=") == false) {
-			window.location.href = `?cache=${randomstring(20)}`;
-		}
+		//if(window.location.search.startsWith("?cache=") == false) {
+		window.location.href = `?cache=${randomstring(20)}`;
+		//}
 		already = true;
 	}
 	</script>
