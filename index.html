@@ -19,7 +19,7 @@
 	return result;
 	}
 	// For cache problems
-	if(window.search.startsWith("?cache=") == false) {
+	if(window.location.search.startsWith("?cache=") == false) {
 		window.location.href = `?cache=${randomstring(15)}`;
 	}
 	</script>
