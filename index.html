@@ -7,7 +7,7 @@
 			font-family: Helvetica, sans-serif;
 		}
 	</style>
-	<script>
+	<!--script>
 	function randomstring(length) {
 		var result           = '';
 		var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -19,14 +19,16 @@
 	return result;
 	}
 	// For cache problems
-	var already = false;
-	if(already == false) {
+	if(document.cookie == "refreshed=false") {
+		
+	}
+	if(document.cookie == "refreshed=true") {
 		//if(window.location.search.startsWith("?cache=") == false) {
 		window.location.href = `?cache=${randomstring(20)}`;
 		//}
-		already = true;
+		document.cookie == "refreshed=false";
 	}
-	</script>
+	</script-->
 </head>
 <body>
 	<h1>Discord Fake Nitro Emojis</h1>
