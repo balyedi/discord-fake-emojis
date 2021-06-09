@@ -19,8 +19,12 @@
 	return result;
 	}
 	// For cache problems
-	if(window.location.search.startsWith("?cache=") == false) {
-		window.location.href = `?cache=${randomstring(15)}`;
+	var already = false;
+	if(already == false) {
+		if(window.location.search.startsWith("?cache=") == false) {
+			window.location.href = `?cache=${randomstring(15)}`;
+		}
+		already = true;
 	}
 	</script>
 </head>
